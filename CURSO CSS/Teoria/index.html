@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teoria de CSS</title>
+
+  <!-- Adicionando estilo em paragrafo External -->
+  <link rel="stylesheet" href="/CURSO CSS/Teoria/css/styles.css">
+
+</head>
+
+<body>
+  <p style="color: red;"> Paragrafo Inline </p>
+  <p> Paragrafo Internal </p>
+  <p> Paragrafo External </p>
+</body>
+
+<!-- No titulo principal colocamos um ID que identifica unicamente esse elemento no HTML-->
+<h1 id="titulo-principal"> Titulo principal</h1>
+
+<!-- Aqui inserimos classe. Se digitarmos p.classe-teste, o construtor insere o esqueleto do Codigo-->
+<p class="minha-classe"> Algum conteudo do site</p>
+<p class="minha-classe"> Algum conteudo do site 2</p>
+<p class="minha-classe"> Algum conteudo do site 3</p>
+
+<!-- TIPOS DE CORES -->
+<p class="nome-da-cor">Rosa</p>
+<p class="hexa">Exadecial</p>
+<p class="rgb">RGB</p>
+
+
+<!-- TIPOS DE FONTES -->
+<p class="serifada"> Fonte Serifada</p>
+<p class="semserifa"> Fonte sem Serifa</p>
+<p class="mono-espacada"> Fonte mono espacada</p>
+
+<!--TAMANHO DA FONTE: Size e Weigth-->
+<p class="tamanho-fonte-grande">Esta fonte esta grande</p>
+<p class="tamanho-fonte-pequena">Esta fonte esta pequena</p>
+<p class="peso-fonte">Esta fonte esta em negrito</p>
+<p class="texto-italico"> Texto em italico</p>
+
+<!--Conceito de BOX MODEL-->
+<div class="box-model">
+  <p>Este é um box model</p>
+</div>
+
+<!--PROPRIEDADES DE TEXTO-->
+<p class="alinhamento">Texto ao Centro</p>
+<p class="maiusculo"> texto em maiusculo</p>
+<p class="minusculo"> TEXTO EM MINUSCULO</p>
+
+<!-- ESPAÇAMENTO DE LINHAS E PARAFRAFOS-->
+<p class="espacamento-texto">Texto com espaçamento entre linhas e letras</p>
+<p class="espacamento-texto">Texto com espaçamento entre linhas e letras</p>
+
+<!--LINKS-->
+<div>
+  <a href="#" class="decoration">Meu link 1</a>
+</div>
+<div>
+  <a href="Http://www.google.com" class="visitado">Meu link 1</a>
+  <div>
+    <a href="#" class="estilo-houver">Meu link 3</a>
+  </div>
+
+  <!--COMO TRANSFORMAR UM LINK EM BUTTON -->
+  <div>
+    <a href="#" class="btn">Clique em mim</a>
+  </div>
+
+  <!-- LISTAS-->
+  <ul>
+    <li>Lista</li>
+    <li>Com</li>
+    <li>Bullets</li>
+  </ul>
+
+  <!-- LISTAS SEM ESTILO-->
+  <ul class="sem-estilo">
+    <li>Lista</li>
+    <li>Com</li>
+    <li>Bullets</li>
+  </ul>
+
+  <!--DISPLAY: Essa função no CSS muda a forma como um elemento é exibido na tela. Sempre colocamos ele dentro 
+elemento de bloco, no caso uma div -->
+  <div class="inline"></div>
+  <div class="inline"></div>
+  <span class="bloco">Teste</span>
+  <span class="bloco">Teste 2</span>
+  <div class="inline hidden"></div>
+
+  <!--POSIÇÕES FIXAS-->
+  <div class="elemento-fixo">Este elemento vai ficar fixo na tela</div>
+
+  <!--PSEUDO SELETOR: First Child-->
+  <div class="primeiro-elemento">
+    <p>Este terá estilo</p>
+    <p>Este não</p>
+    <p>Este não</p>
+    <p>Este não</p>
+  </div>
+
+
+  <!--PSEUDO ELEMENTO: A Tag é um elemento. Mas nesse caso vamos conseguir estiliar apenas 1 letra de uma frase,como 
+se essa letra fosse um elemento (tag) do CSS-->
+  <p class="primeira-letra">Esta frase começa com uma letra diferente</p>
+
+  <!--ESPECIFIDADE: -->
+  <h2> Meu titulo</h2>
+  <h2 class="titulo"> Meu titulo</h2>
+  <h2 class="titulo" id="meu-titulo-preferido"> Meu titulo</h2>
+
+
+</html>

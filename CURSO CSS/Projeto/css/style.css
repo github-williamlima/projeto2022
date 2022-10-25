@@ -1,0 +1,128 @@
+/*Quero padronizar todas as coisas, RESET. Para isso usamos o comando abaixo. Assim eu removo todos os espaços
+do meu layout*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+/*CABECALHO*/
+header {
+    background-color: #3db36b; /*Cor de fundo da minha pagina*/
+    text-align: center; /*Alinhamento do meu texto*/
+    padding: 15px; /*Espacamento das bordas*/
+    color: #fff; /*Cor do texto*/
+}
+
+/*GRID DE PRODUTOS*/
+.container {
+    background-color: #eee;
+    min-height: 60vh;/* (Altura minima ) O container sera 60% da nossa tela. Garanto um corpo de 60%, garantindo rodape no fundo*/
+    padding: 50px;  /* (Espacamento das bordas) Garanto meu elemento mais centralizado*/
+}
+
+/*Estou centralizando meu conteudo*/
+.products-container {
+    max-width: 1200px; /*Largura maxima da minha pagina*/
+    margin: 0 auto;  /*Margin 0 nas laterais e automatico para cima e para baixo*/
+}
+
+.card {
+    width: 31%; /*Largura*/
+    margin: 1% 1%; /*Margem*/
+    display: inline-block; /*Modo de exibição*/
+    padding: 15px;
+}
+
+.product-img {
+    height: 300px; /*Altura*/
+    width: 100%; /*Largura*/
+    margin-bottom: 10px;  /*Afasta a imagem do conteudo*/
+    background-position: center;  /*Centraliza minha imagem*/
+    background-size: cover;  /*Mostra o maximo da imagem possivel dentro da area que eu tenho*/
+
+}
+
+/*IMAGENS*/
+#img-1 {
+    background-image: url('../img/tenis1.jpg');
+}
+
+
+#img-2 {
+    background-image: url('../img/tenis2.jpg');
+}
+
+
+#img-3 {
+    background-image: url('../img/tenis3.jpg');
+}
+
+
+#img-4 {
+    background-image: url('../img/tenis4.jpg');
+}
+
+
+#img-5 {
+    background-image: url('../img/tenis5.jpg');
+}
+
+#img-6 {
+    background-image: url('../img/tenis6.jpg');
+}
+
+/*RODAPE*/
+footer {
+    background-color: #3db36b;
+    color: #fff;
+    border-bottom: 3 px solid #0f642f; /*Inserimos uma linha com esse comando*/
+    text-align: center; /*Alinhamento do texto*/
+    padding: 80px;
+
+}
+
+
+h3 {
+    margin-bottom: 10px; /*Margem inferior*/
+    color: #3db36b;
+    font-size: 24px; /*Tamanho da fonte*/
+    padding-left: 7px; /*Espaçamento esquerdo*/
+    border-left: 5px solid #0f642f; /*Borda esquerda*/
+}
+
+
+/*Estilizando os paragrafos que estao dentro do card*/
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold; /*Espessura da fonte*/
+}
+
+.btn {
+    display: block; /*Modo de exibição*/
+    width: 100%; /*Largura*/
+    text-align: center; /*Alinhamento do texto*/
+    text-transform: uppercase; /*Transformacao do texto: TUDO MAIUSCULO*/
+    text-decoration: none; /*Comando retira o anderline do texto*/
+    background-color: #3db36b; /*Cor de fundo*/
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px; /*Raio da borda*/
+}
+
+.btn:hover {
+    background-color: #0f642f;
+}
+
+/* Rodapé */
+footer {
+    background-color: #3db36b;
+    text-align: center;
+    padding: 80px;
+    color: #fff;
+}

@@ -1,0 +1,180 @@
+/*Quero padronizar todas as coisas, RESET. Para isso usamos o comando abaixo. Assim eu removo todos os espaços
+do meu layout*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+/*CABECALHO DA PAGINA*/
+header{
+    background-color: #163475;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+/*BARRA DE NAVEGACAO*/
+nav{
+    display: flex; /*Comando alinha de forma horizontal*/
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #a89e9e;
+
+}
+
+/*AJUSTANDO MENU DA BARRA DE NAVEGACAO*/
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+ }
+
+/*AJUSTA MARGEM DIREITA DO TEXTO: deixa o texto mais longe um do outro*/
+ul li {
+    margin-right: 12px;
+    
+}
+
+.barra-nav{
+    font-size: 32px;
+}
+
+.sessao-banner{
+    background-color: #eee;
+    min-height: 60vh;
+    padding: 10px;
+    border-bottom: 1px solid #a89e9e;
+}
+
+
+.sessao-banner-img{
+
+    max-width: 1200px;
+    margin: 10px auto;
+    background-position: center;
+    margin-left: 50px;
+    
+   
+}
+
+
+.banner {
+    padding: 5px;
+
+}
+
+/*GRID DE PRODUTOS*/
+.container {
+    background-color: #eee;
+    min-height: 60vh;/*O container sera 60% da nossa tela. Garanto um corpo de 60%, garantindo rodape no fundo*/
+    padding: 50px;  /*Garanto meu elemento mais centralizado*/
+}
+
+/*Estou centralizando meu conteudo*/
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;  /*Margin 0 nas laterais e automatico para cima e para baixo*/
+}
+
+.card {
+    width: 31%;
+    margin: 1% 1%;
+    display: inline-block;
+    padding: 15px;
+}
+
+.product-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;  /*Afasta a imagem do conteudo*/
+    background-position: center;  /*Centraliza minha imagem*/
+    background-size: cover;  /*Mostra o maximo da imagem possivel dentro da area que eu tenho*/
+
+}
+
+/*IMAGENS*/
+#img-1 {
+    background-image: url('../img/tenis1.jpg');
+}
+
+
+#img-2 {
+    background-image: url('../img/tenis2.jpg');
+}
+
+
+#img-3 {
+    background-image: url('../img/tenis3.jpg');
+}
+
+
+#img-4 {
+    background-image: url('../img/tenis4.jpg');
+}
+
+
+#img-5 {
+    background-image: url('../img/tenis5.jpg');
+}
+
+#img-6 {
+    background-image: url('../img/tenis6.jpg');
+}
+
+
+
+
+h3 {
+    margin-bottom: 10px;
+    color: #3db36b;
+    font-size: 24px;
+    padding-left: 7px;
+    border-left: 5px solid #0f642f;
+}
+
+
+/*Estilizando os paragrafos que estao dentro do card*/
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #163475;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #8a8d9e;
+}
+
+
+
+/*RODAPE*/
+footer {
+    background-color: #163475;
+    color: #fff;
+    border-bottom: 3 px solid #0f642f;
+    text-align: center;
+    padding: 80px;
+
+}
+
+
+   
+
+
+

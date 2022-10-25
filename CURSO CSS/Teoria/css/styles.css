@@ -1,0 +1,241 @@
+body{
+ padding: 20px;
+ padding-bottom: 500px; /*Dessa forma eu consigo inserir uma barra de rolagem na pagina*/
+
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 30px; /*Aqui eu eumento a fonte dos meus paragrafos*/
+}
+
+/*Para identificar uma classe basta inserir .nomeDaClasse*/
+.minha-classe{
+    color: black;
+    background-color: brown;
+}
+
+
+/* Para identificar um ID nos inserimos um #nomeDoID*/
+#titulo-principal{
+    background-color: yellow
+    ;
+    
+}
+
+/*Para atingir todos os elementos da pagina basta { }. Isso implica que tudo que estiver dentro 
+ dos conchetes será modificado no site inteiro, como coisas padroes */
+
+ {
+    font-family:Arial;
+ }
+
+
+/*Para selecionar mais de um elemento por vez no CSS. Nesse exemplo estou aplicando um estilo nesses
+dois elementos, no caso o paragrafo (P) e no meu titulo (H1). O estilo se aplicara aos dois elementos */
+
+p,h1{
+    border-bottom: 1px solid red;
+}
+
+/* NOME DA COR. Quando colocamos o ponto (.) representa que estamos chamando uma classe */
+.nome-da-cor{
+color: pink;
+}
+
+/*Para inserir uma cor em Hexadecimal, basta colocar o comando #, antes do atributo color. É o mais 
+utilizado */
+.hexa{
+    color:#d3d3d3;
+    background-color: #341c44;
+}
+
+/*Para inserir cor RGB basta inserir o comando rgb e logo em seguida trez nros que reprentam a cor.*/
+
+.rgb{
+    color: rgb(196, 185, 67);
+}
+
+
+/*FONTES*/
+.serifada{
+    color: #341c44;
+    font-family: Georgia;
+}
+
+
+.semserifa{
+    color: firebrick;
+    font-family: Helvetica;
+
+}
+
+.mono-espacada{
+    color: blue;
+    font-family: 'Courier New' ;
+
+}
+
+/*AUMENTANDO E DIMINUINDO O TAMANHO DA FONTE*/
+.tamanho-fonte-grande{
+    font-size: 64px;
+}
+
+.tamanho-fonte-pequena{
+    font-size: 12px;
+}
+
+.peso-fonte{
+    font-weight: 600;
+}
+
+.texto-italico{
+    font-style: italic;
+}
+
+/*CONCEITO DE BOX MODEL. Podemos alterar a autura, largura e margem do elemento. Assim eu modifico como 
+elemento é representado na tela. Assim eu defino minha autura(width), largura(height), se tem borda(border)
+e um espaço para meu texto nao ficar colado na borda (padding)*/
+.box-model{
+    width: 200px;
+    height: 100;
+    border: 3px solid rgb(32, 32, 68);
+    padding: 20px;
+    margin: 20px;
+}
+
+/*PROPRIEDADES DE TEXTO*/
+.alinhamento{
+    text-align: center;
+}
+
+.maiusculo{
+    text-transform: lowercase;
+}
+
+.minusculo{
+    text-transform: uppercase;
+}
+
+/*ESPACAMENTO ENTRE LINHAS E LETRAS*/
+.espacamento-texto{
+    width: 150px;
+    line-height: 40px; /*Propriedade que aumenta a autura da linha*/
+    letter-spacing: 8px; /*Espacamento entre letras*/
+}
+
+/*LINKS*/
+.decoration{
+    text-decoration: none; /*Esse comando eu tiro o anderline do link*/
+}
+
+.visitado:visited{ /*Adiciono o atributo "visited" para mostrar que o link foi "visto"*/
+    color: orange; 
+}
+
+.estilo-houver:hover{ /*Quando a gente passa o ponteiro do mouse por cinalizando que o link foi 
+    selecionado. Quando o ponteiro o mouse passar no link ele ficara da cor informada*/
+    color: #dce5e7; /**/
+    background-color: gray; /* Esse comando eu mudo a cor de fundo*/
+    font-size: 30px;
+    width: 30;
+    height: 30;
+    border: 2px solid rebeccapurple; /* Esse comando eu coloco uma borda solida de 2 px azul*/
+}
+
+.btn{
+    background-color: rgb(23, 172, 23);  /* Cor de fundo do botao*/
+    color: #fff; /* Cor do texto do botao*/
+    font-size: 15px; /* Tamanho do texto Fonte do botao*/
+    text-transform: uppercase; /* Altero todas as letrar para maiusculo do botao*/
+    font-family: Helvetica; /* Fonte do texto do botao*/
+    border-radius: 5px; /* Coloco as bordas mais arredondadas do botao*/
+    border: 3px solid #341c44; /* Coloco a borda com espessura de 3px solida e preta */
+    text-decoration: none;  /*Esse comando eu tiro o anderline do link*/
+    display: block;  /* Toma a linha toda para botão*/
+    width: 120px;  /* Limito a largura do botao*/
+    padding: 12px 7px; /* Esse comando eu coloco um preenchimento interno do texto no botao*/
+    text-align: center; /* Alinhamento do texto do botao*/
+    margin: 20px; /* Espassamento do texto de todos os elementos do botao*/
+    transition: 0.5s; /* Quando mouse passa por cima do botao ele faz uma transição de 0,5 segundo*/
+}
+
+.btn:hover{ /* Esse comando eu altero a cor de fundo do botao quando o mouse passa por cima*/
+    background-color: #234966;
+}
+
+/*LISTAS*/
+.sem-estilo{    
+    list-style: none; /*Esse comando elimina os bullets da lista*/
+}
+
+/*DISPLAY: Alteramos a forma como o elemento é exibido na tela*/
+.inline{
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    margin: 5px;
+    display: inline-block; /* Os elementos ficam alinhados de forma horizontal*/
+
+
+}
+
+.bloco{
+    display: block ; /* Os elementos ficam alinhados de forma vertical*/
+}
+
+.hidden{
+    display: none;  /* Os elementos ficam ocultos da minha tela. Aparece apenas no CSS*/
+}
+
+/*POSIÇÃO FIXA: Com esse elemento do CSS eu posso colocar qualquer textou ou elemento fixo na tela*/
+.elemento-fixo{
+    position: fixed;
+    left: 0; /*Elemento vai ficar 0 a esquerda*/
+    top: 0; /*Elemento vai ficar 0 no top*/
+    width: 100%; /*Largura do meu elemento*/
+    padding: 15px; /*Preenchimento do meu elemento em pixel*/
+    text-align: center;
+    background-color: #1292ae;
+    border-bottom: 2px solid #342299;
+    color: #fff;
+}
+
+/*PSEUDO SELETOR: Pseudo Class. Nos colocamos a tag junto com o comando: first-child. Dessa forma apenas o primeiro
+elemento será modificado, sendo que o restante dessa classe herda do CSS pai da página.*/
+.primeiro-elemento p:first-child{
+    color: purple;
+    font-weight: bold;
+
+}
+
+/*PSEUDO ELEMENTO. O que diferencia o pseudo class do elemento é o ":". Na classe usamos apenas 1 e no elemento 2, 
+como ilustrado abaixo*/
+.primeira-letra::first-letter{ /*Comando altera apenas primeira letra do meu elemento */
+    font-size: 40px;
+    color: blue;
+    background-color: red;
+    padding: 4px;
+
+}
+
+
+/*ESPECIFIDADE*/
+h2{
+    color: red;
+}
+
+.titulo{
+    color: green;
+}
+
+#meu-titulo-preferido{
+    color: blue;
+}
+
+/*IMPORTANT: Ele sobrepoem todas as regras de estilo para aquele elemento, onde todos os demais perdem o estilo
+ficando apenas com esse que foi inserido, com esse comando */
+h2{
+    color: purple !important;
+}
+
